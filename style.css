@@ -1,16 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --primary-color: #FFFFFF;
-    --secundary-color:#C0C0C0;
-    --tertiary-color:#EC2F46;
-    --background-color:#00030c;
+:root {
+  --primary-color: #ffffff;
+  --secundary-color: #c0c0c0;
+  --tertiary-color: #ec2f46;
+  --background-color: #00030c;
+  --button-color: #167BF7;
+  --font-size-text: 16px;
 }
-body{
-    background-color: var(--background-color);
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.main {
+  background-image: url("img/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: #ec2f46 2px solid;
+}
+.container {
+  height: 100vh;
+}
+.container__button {
+background-color: var(--button-color);
+display: flex;
+width: 31%;
+justify-content: center;
+padding: 1%;
+color: var(--primary-color);
+text-decoration: none;
+font-size: var(--font-size-text);
+border-radius:  8px;
+}
+.button_secundary{
+    background-color: transparent;
+    border: var(--primary-color) 2px solid;
+}
+.container__warning{
     color: var(--primary-color);
-
 }
