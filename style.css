@@ -10,6 +10,7 @@
   --tertiary-color: #ec2f46;
   --background-color: #00030c;
   --button-color: #167BF7;
+  --button-hover: #5ea0f1;
   --font-size-text: 1rem;
   --font-style-primary: 'Inter', sons-serif;
 }
@@ -28,6 +29,7 @@ body {
   text-align: center;
 }
 .container {
+
   height: 100vh;
   display: grid;
    grid-template-columns: 50% 50%;
@@ -80,6 +82,7 @@ color: var(--secundary-color);
   align-items: center;
   margin: 0 10em;
 }
+
 .tertiary__text{
 color: var(--primary-color);
 font-weight: 400;
@@ -101,4 +104,68 @@ border-radius: 0.5em;
   flex-direction: column;
   gap: 3em;
   
+}
+.quaternary{
+  align-items: center;
+  margin: 0 20em;
+}
+.quaternary__image{
+width: 100%;
+}
+.quaternary__title{
+  font-size: 3em;
+  color: var(--primary-color);
+}
+.quaternary__text{
+  color: var(--primary-color);
+}
+.devices{
+  width: 100%;
+text-align: center;
+
+}
+.devices__list{
+  display: flex;
+  margin: 2em 0;
+  text-align: center;
+  justify-content: center;
+  gap: 1em;
+  list-style-type: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+.devices__title{
+  align-items: center;
+  font-size: 3em;
+  color:  var(--primary-color);
+}
+.footer{
+margin: 0 20em;
+text-align: center;
+}
+.footer__image{
+  width: 10%;
+margin: 3em 0;
+}
+.footer__list{
+display: flex;
+justify-content: space-evenly;
+list-style-type: none;
+}
+.footer__link{
+text-decoration: none;
+color: var(--primary-color);
+
+}
+.footer__text{
+margin: 2em 0;
+font-size: 0.875rem;
+color: var(--secundary-color);
+}
+a:hover{
+background-color: var(--button-hover);
+}
+.footer__link:hover{
+  color: var(--button-color);
+  background-color: var(--background-color);
 }
